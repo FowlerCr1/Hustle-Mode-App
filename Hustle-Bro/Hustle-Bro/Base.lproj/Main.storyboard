@@ -18,15 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYK-AC-KPd">
-                                <rect key="frame" x="447" y="549" width="114" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYK-AC-KPd">
+                                <rect key="frame" x="464" y="635" width="96" height="96"/>
                                 <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="powerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WhE-Dg-MnW"/>
+                                </connections>
                             </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="ZDZ-3e-WEX">
+                                <rect key="frame" x="305" y="794" width="414" height="672"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="xBb-57-IXW">
+                                <rect key="frame" x="-464" y="530" width="1908" height="904"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="904" id="bX2-uN-5QJ"/>
+                                    <constraint firstAttribute="width" secondItem="xBb-57-IXW" secondAttribute="height" multiplier="477:226" id="dbx-ud-AaV"/>
+                                    <constraint firstAttribute="width" constant="1908" id="nfO-iw-Pd4"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hustle Mode:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4P4-dv-qSx">
+                                <rect key="frame" x="384" y="983.5" width="256.5" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activated" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqV-89-Q4k">
+                                <rect key="frame" x="421.5" y="1052.5" width="181.5" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.04381446387762037" green="0.25803944106016513" blue="0.40163536269430056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xBb-57-IXW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="299" id="2CE-BX-eN0"/>
+                            <constraint firstItem="4P4-dv-qSx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="327.5" id="7VE-tg-YFX"/>
+                            <constraint firstItem="DqV-89-Q4k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9tA-ab-ExQ"/>
+                            <constraint firstItem="xBb-57-IXW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-22" id="HEY-mw-wV2"/>
+                            <constraint firstItem="ZDZ-3e-WEX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LTk-aE-yvb"/>
+                            <constraint firstItem="4P4-dv-qSx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YJj-8Z-Slq"/>
+                            <constraint firstItem="EYK-AC-KPd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aPP-BI-USG"/>
+                            <constraint firstItem="EYK-AC-KPd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ado-FS-8wt"/>
+                            <constraint firstItem="xBb-57-IXW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="299" id="giA-OJ-ARV"/>
+                            <constraint firstItem="xBb-57-IXW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-22" id="sAl-rr-Yb2"/>
+                            <constraint firstItem="DqV-89-Q4k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="396.5" id="sWc-41-48r"/>
+                            <constraint firstItem="ZDZ-3e-WEX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z95-zK-h8z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activationLabel" destination="DqV-89-Q4k" id="X2Q-Ta-1eR"/>
+                        <outlet property="backgroundImage" destination="xBb-57-IXW" id="Y8u-le-vVn"/>
+                        <outlet property="hustleLabel" destination="4P4-dv-qSx" id="SgK-TP-Q4d"/>
+                        <outlet property="powerBtn" destination="EYK-AC-KPd" id="6aZ-KY-QZz"/>
+                        <outlet property="rocket" destination="ZDZ-3e-WEX" id="G8d-30-Tbf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,6 +80,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cloudsAndOrangeOval" width="414" height="477"/>
         <image name="powerButton" width="96" height="96"/>
+        <image name="rocketAndStream" width="414" height="672"/>
     </resources>
 </document>

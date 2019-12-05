@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68121FC6239972A800A1D656 /* RBBSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68121FBD239972A700A1D656 /* RBBSpringAnimation.swift */; };
+		68121FC7239972A800A1D656 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 68121FBE239972A700A1D656 /* LICENSE */; };
+		68121FC8239972A800A1D656 /* RBBLinearInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68121FBF239972A700A1D656 /* RBBLinearInterpolation.swift */; };
+		68121FC9239972A800A1D656 /* RBBBlockBasedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68121FC0239972A700A1D656 /* RBBBlockBasedArray.swift */; };
+		68121FCA239972A800A1D656 /* EAAnimationFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68121FC1239972A700A1D656 /* EAAnimationFuture.swift */; };
+		68121FCB239972A800A1D656 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68121FC2239972A700A1D656 /* Info-tvOS.plist */; };
+		68121FCC239972A800A1D656 /* EasyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68121FC3239972A700A1D656 /* EasyAnimation.swift */; };
 		688EEAB2237AF38F00063D31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688EEAB1237AF38F00063D31 /* AppDelegate.swift */; };
 		688EEAB4237AF38F00063D31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688EEAB3237AF38F00063D31 /* ViewController.swift */; };
 		688EEAB7237AF38F00063D31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688EEAB5237AF38F00063D31 /* Main.storyboard */; };
@@ -16,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68121FBD239972A700A1D656 /* RBBSpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBBSpringAnimation.swift; sourceTree = "<group>"; };
+		68121FBE239972A700A1D656 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		68121FBF239972A700A1D656 /* RBBLinearInterpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBBLinearInterpolation.swift; sourceTree = "<group>"; };
+		68121FC0239972A700A1D656 /* RBBBlockBasedArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBBBlockBasedArray.swift; sourceTree = "<group>"; };
+		68121FC1239972A700A1D656 /* EAAnimationFuture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EAAnimationFuture.swift; sourceTree = "<group>"; };
+		68121FC2239972A700A1D656 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		68121FC3239972A700A1D656 /* EasyAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyAnimation.swift; sourceTree = "<group>"; };
+		68121FC4239972A700A1D656 /* EasyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyAnimation.h; sourceTree = "<group>"; };
 		688EEAAE237AF38F00063D31 /* Hustle-Bro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hustle-Bro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		688EEAB1237AF38F00063D31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		688EEAB3237AF38F00063D31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,11 +52,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68121FBB239972A700A1D656 /* EasyAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				68121FBC239972A700A1D656 /* RBBSpringAnimation */,
+				68121FC1239972A700A1D656 /* EAAnimationFuture.swift */,
+				68121FC2239972A700A1D656 /* Info-tvOS.plist */,
+				68121FC3239972A700A1D656 /* EasyAnimation.swift */,
+				68121FC4239972A700A1D656 /* EasyAnimation.h */,
+			);
+			path = EasyAnimation;
+			sourceTree = "<group>";
+		};
+		68121FBC239972A700A1D656 /* RBBSpringAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				68121FBD239972A700A1D656 /* RBBSpringAnimation.swift */,
+				68121FBE239972A700A1D656 /* LICENSE */,
+				68121FBF239972A700A1D656 /* RBBLinearInterpolation.swift */,
+				68121FC0239972A700A1D656 /* RBBBlockBasedArray.swift */,
+			);
+			path = RBBSpringAnimation;
+			sourceTree = "<group>";
+		};
 		688EEAA5237AF38F00063D31 = {
 			isa = PBXGroup;
 			children = (
 				688EEAB0237AF38F00063D31 /* Hustle-Bro */,
 				688EEAAF237AF38F00063D31 /* Products */,
+				68121FBB239972A700A1D656 /* EasyAnimation */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,10 +164,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68121FCB239972A800A1D656 /* Info-tvOS.plist in Resources */,
 				688EEAC4237AF3D200063D31 /* hustle-on.wav in Resources */,
 				688EEABC237AF39200063D31 /* LaunchScreen.storyboard in Resources */,
 				688EEAB9237AF39200063D31 /* Assets.xcassets in Resources */,
 				688EEAB7237AF38F00063D31 /* Main.storyboard in Resources */,
+				68121FC7239972A800A1D656 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68121FC8239972A800A1D656 /* RBBLinearInterpolation.swift in Sources */,
+				68121FC9239972A800A1D656 /* RBBBlockBasedArray.swift in Sources */,
 				688EEAB4237AF38F00063D31 /* ViewController.swift in Sources */,
 				688EEAB2237AF38F00063D31 /* AppDelegate.swift in Sources */,
+				68121FC6239972A800A1D656 /* RBBSpringAnimation.swift in Sources */,
+				68121FCA239972A800A1D656 /* EAAnimationFuture.swift in Sources */,
+				68121FCC239972A800A1D656 /* EasyAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
