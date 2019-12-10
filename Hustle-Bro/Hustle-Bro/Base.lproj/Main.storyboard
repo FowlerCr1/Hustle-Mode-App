@@ -36,8 +36,15 @@
                                     <constraint firstAttribute="width" constant="1908" id="nfO-iw-Pd4"/>
                                 </constraints>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hustle Mode:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4P4-dv-qSx">
-                                <rect key="frame" x="384" y="983.5" width="256.5" height="54"/>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pyongyang" translatesAutoresizingMaskIntoConstraints="NO" id="91J-lc-zpi">
+                                <rect key="frame" x="-41" y="759" width="1065" height="607"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="607" id="Cgr-Am-j9e"/>
+                                    <constraint firstAttribute="width" constant="1065" id="JQA-B6-xxz"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="North Korea Mode:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4P4-dv-qSx">
+                                <rect key="frame" x="331.5" y="983.5" width="361" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,18 +55,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlp-6z-c3S">
+                                <rect key="frame" x="338" y="1130" width="348" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XPX-ys-vjB"/>
+                                    <constraint firstAttribute="width" constant="348" id="s2I-ED-wlc"/>
+                                </constraints>
+                                <state key="normal" title="Click To Close App In Order To Restart Rocket">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="appClose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="auo-Si-rSg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.04381446387762037" green="0.25803944106016513" blue="0.40163536269430056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xBb-57-IXW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="299" id="2CE-BX-eN0"/>
                             <constraint firstItem="4P4-dv-qSx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="327.5" id="7VE-tg-YFX"/>
                             <constraint firstItem="DqV-89-Q4k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9tA-ab-ExQ"/>
+                            <constraint firstItem="Hlp-6z-c3S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="462" id="CTN-kr-3He"/>
+                            <constraint firstItem="Hlp-6z-c3S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GA5-WB-IfT"/>
                             <constraint firstItem="xBb-57-IXW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-22" id="HEY-mw-wV2"/>
                             <constraint firstItem="ZDZ-3e-WEX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LTk-aE-yvb"/>
+                            <constraint firstItem="91J-lc-zpi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="379.5" id="Viw-pD-7QV"/>
                             <constraint firstItem="4P4-dv-qSx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YJj-8Z-Slq"/>
                             <constraint firstItem="EYK-AC-KPd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aPP-BI-USG"/>
                             <constraint firstItem="EYK-AC-KPd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ado-FS-8wt"/>
                             <constraint firstItem="xBb-57-IXW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="299" id="giA-OJ-ARV"/>
+                            <constraint firstItem="91J-lc-zpi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-20.5" id="mE5-E2-jjs"/>
                             <constraint firstItem="xBb-57-IXW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-22" id="sAl-rr-Yb2"/>
                             <constraint firstItem="DqV-89-Q4k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="396.5" id="sWc-41-48r"/>
                             <constraint firstItem="ZDZ-3e-WEX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z95-zK-h8z"/>
@@ -68,9 +93,11 @@
                     </view>
                     <connections>
                         <outlet property="activationLabel" destination="DqV-89-Q4k" id="X2Q-Ta-1eR"/>
+                        <outlet property="appClose" destination="Hlp-6z-c3S" id="vAv-uJ-40T"/>
                         <outlet property="backgroundImage" destination="xBb-57-IXW" id="Y8u-le-vVn"/>
                         <outlet property="hustleLabel" destination="4P4-dv-qSx" id="SgK-TP-Q4d"/>
                         <outlet property="powerBtn" destination="EYK-AC-KPd" id="6aZ-KY-QZz"/>
+                        <outlet property="pyongyang" destination="91J-lc-zpi" id="3Cc-PF-PD4"/>
                         <outlet property="rocket" destination="ZDZ-3e-WEX" id="G8d-30-Tbf"/>
                     </connections>
                 </viewController>
@@ -82,6 +109,7 @@
     <resources>
         <image name="cloudsAndOrangeOval" width="414" height="477"/>
         <image name="powerButton" width="96" height="96"/>
+        <image name="pyongyang" width="275" height="183"/>
         <image name="rocketAndStream" width="414" height="672"/>
     </resources>
 </document>

@@ -20,6 +20,7 @@
 		688EEAB9237AF39200063D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688EEAB8237AF39200063D31 /* Assets.xcassets */; };
 		688EEABC237AF39200063D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688EEABA237AF39200063D31 /* LaunchScreen.storyboard */; };
 		688EEAC4237AF3D200063D31 /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 688EEAC3237AF3D200063D31 /* hustle-on.wav */; };
+		68C6CB82239E993800DF6650 /* pyongyang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 68C6CB81239E993800DF6650 /* pyongyang.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		688EEABB237AF39200063D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		688EEABD237AF39200063D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		688EEAC3237AF3D200063D31 /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "hustle-on.wav"; path = "../../Assets/hustle-on.wav"; sourceTree = "<group>"; };
+		68C6CB81239E993800DF6650 /* pyongyang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pyongyang.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		68121FBB239972A700A1D656 /* EasyAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				68C6CB81239E993800DF6650 /* pyongyang.jpeg */,
 				68121FBC239972A700A1D656 /* RBBSpringAnimation */,
 				68121FC1239972A700A1D656 /* EAAnimationFuture.swift */,
 				68121FC2239972A700A1D656 /* Info-tvOS.plist */,
@@ -167,6 +170,7 @@
 				68121FCB239972A800A1D656 /* Info-tvOS.plist in Resources */,
 				688EEAC4237AF3D200063D31 /* hustle-on.wav in Resources */,
 				688EEABC237AF39200063D31 /* LaunchScreen.storyboard in Resources */,
+				68C6CB82239E993800DF6650 /* pyongyang.jpeg in Resources */,
 				688EEAB9237AF39200063D31 /* Assets.xcassets in Resources */,
 				688EEAB7237AF38F00063D31 /* Main.storyboard in Resources */,
 				68121FC7239972A800A1D656 /* LICENSE in Resources */,

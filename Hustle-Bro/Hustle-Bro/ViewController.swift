@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var powerBtn: UIButton!
     @IBOutlet weak var rocket: UIImageView!
+    @IBOutlet weak var pyongyang: UIImageView!
+    @IBOutlet weak var appClose: UIButton!
     
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var activationLabel: UILabel!
@@ -35,8 +37,8 @@ class ViewController: UIViewController {
     
     func sendNotification() {
         let notificationContent = UNMutableNotificationContent()
-        notificationContent.title = "Test"
-        notificationContent.body = "Test body"
+        notificationContent.title = "Missle Test Information"
+        notificationContent.body = "Missile Test Success"
         notificationContent.badge = NSNumber(value: 3)
         
         if let url = Bundle.main.url(forResource: "dune",
@@ -48,7 +50,7 @@ class ViewController: UIViewController {
             }
         }
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5,
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1,
                                                         repeats: false)
         let request = UNNotificationRequest(identifier: "testNotification",
                                             content: notificationContent,
@@ -88,6 +90,7 @@ class ViewController: UIViewController {
         }
     }
     
+    
     @IBAction func powerBtnPressed(_ sender: Any) {
         let content = UNMutableNotificationContent()
         content.title = "Hustle Mode"
@@ -101,10 +104,15 @@ class ViewController: UIViewController {
         powerBtn.isHidden = true
         player.play()
         animate();
+        pyongyang.isHidden = false
         sendNotification();
-        
     }
     
-
+    
+    @IBAction func appClose(_ sender: Any) {
+        sleep(1)
+        exit(0)
+    }
+    
 }
 
